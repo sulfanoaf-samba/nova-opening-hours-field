@@ -1,6 +1,6 @@
 <?php
 
-namespace SadekD\NovaOpeningHoursField;
+namespace Cata\NovaOpeningHoursField;
 
 use Illuminate\Validation\ValidationException;
 use Laravel\Nova\Fields\Field;
@@ -16,7 +16,7 @@ class NovaOpeningHoursField extends Field
     public $component = 'nova-opening-hours-field';
 
     private $allowOverflowMidnight;
-//    private $allowMergeOverlapping;
+    //    private $allowMergeOverlapping;
 
     public function __construct($name, $attribute = null, $resolveCallback = null)
     {
@@ -25,7 +25,7 @@ class NovaOpeningHoursField extends Field
         $this->allowExceptions(TRUE);
         $this->allowOverflowMidnight(FALSE);
         $this->useTextInputs(FALSE);
-//        $this->allowMergeOverlapping(TRUE);
+        //        $this->allowMergeOverlapping(TRUE);
     }
 
     protected function fillAttributeFromRequest(NovaRequest $request, $requestAttribute, $model, $attribute)
@@ -34,10 +34,10 @@ class NovaOpeningHoursField extends Field
             $value = json_decode($request[$requestAttribute], TRUE);
 
             $data = array_merge([
-                'overflow' => (bool)$this->allowOverflowMidnight,
+                'overflow' => (bool) $this->allowOverflowMidnight,
             ], $value);
 
-//            if ($this->allowMergeOverlapping) {
+            //            if ($this->allowMergeOverlapping) {
 //                $data = OpeningHours::mergeOverlappingRanges($data);
 //            }
 
@@ -67,7 +67,7 @@ class NovaOpeningHoursField extends Field
         return $this->withMeta(['useTextInputs' => $value]);
     }
 
-//    public function allowMergeOverlapping(bool $allowMergeOverlapping)
+    //    public function allowMergeOverlapping(bool $allowMergeOverlapping)
 //    {
 //        $this->allowMergeOverlapping = $allowMergeOverlapping;
 //        return $this->withMeta(['allowMergeOverlapping' => $this->allowMergeOverlapping]);

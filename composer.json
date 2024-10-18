@@ -1,34 +1,34 @@
 {
-    "name": "sadekd/nova-opening-hours-field",
-    "description": "Laravel Nova custom field for Spatie Opening Hours",
-    "keywords": [
-        "laravel",
-        "nova",
-        "opening hours"
-    ],
-    "license": "MIT",
-    "require": {
-        "php": "^7.2|^8.0",
-        "laravel/nova": "^4.13",
-        "nova-kit/nova-packages-tool": "^1.2",
-        "spatie/opening-hours": "^2.0|^3.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "SadekD\\NovaOpeningHoursField\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "SadekD\\NovaOpeningHoursField\\FieldServiceProvider"
-            ]
-        }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://nova.laravel.com"
-        }
-    ]
+	"name": "cata/nova-opening-hours-field",
+	"description": "Laravel Nova custom field for Spatie Opening Hours",
+	"keywords": [
+		"laravel",
+		"nova",
+		"opening hours"
+	],
+	"license": "MIT",
+	"require": {
+		"php": "^7.2|^8.0",
+		"laravel/nova": "^4.13",
+		"nova-kit/nova-packages-tool": "^1.2",
+		"spatie/opening-hours": "^2.0|^3.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Cata\\NovaOpeningHoursField\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Cata\\NovaOpeningHoursField\\FieldServiceProvider"
+			]
+		}
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://nova.laravel.com"
+		}
+	]
 }
