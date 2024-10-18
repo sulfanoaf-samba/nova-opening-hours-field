@@ -12,6 +12,6 @@ mix
 			'laravel-nova': 'LaravelNova',
 		},
 		output: {
-			uniqueName: 'cata/nova-opening-hours-field',
+			uniqueName: 'sulfanoaf-cata/nova-opening-hours-field',
 		},
 	});

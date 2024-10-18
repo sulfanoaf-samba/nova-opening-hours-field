@@ -1,5 +1,5 @@
 {
-	"name": "cata/nova-opening-hours-field",
+	"name": "sulfanoaf-cata/nova-opening-hours-field",
 	"description": "Laravel Nova custom field for Spatie Opening Hours",
 	"keywords": [
 		"laravel",
